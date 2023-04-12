@@ -12,7 +12,7 @@ namespace OopsConcepts274
         static void Main(string[] args)
         {
             Console.WriteLine("Welcoke to oops concepts");
-            Console.WriteLine("1.Class and Object \n2.Inheritance \n3.Polymorphism \n4.Abstraction\n5.Encapsulation");
+            Console.WriteLine("1.Class and Object \n2.Inheritance \n3.Polymorphism \n4.Abstraction\n5.Encapsulation\n6.Types of Variables");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -46,11 +46,19 @@ namespace OopsConcepts274
                     color.Color();
                     break;
                 case 5:
-
                     Person myObj = new Person();
                     myObj.Name = "Liam";
                     Console.WriteLine(myObj.Name);
-
+                    break;
+                case 6:
+                    TypeofVariables obj = new TypeofVariables();
+                    obj.mathsMarks = 20;
+                    obj.engMarks = 30;
+                    Console.WriteLine("Accessing instance variable engMarks = "+obj.engMarks);
+                    Console.WriteLine("Accessing static variable salary = "+TypeofVariables.salary);
+                    Console.WriteLine("accesing constant variable Age = "+TypeofVariables.Age);
+                    TypeofVariables local=new TypeofVariables();
+                    local.Add();
                     break;
             }                                                            
             Console.ReadLine();                           
