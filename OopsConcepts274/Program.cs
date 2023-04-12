@@ -12,7 +12,7 @@ namespace OopsConcepts274
         static void Main(string[] args)
         {
             Console.WriteLine("Welcoke to oops concepts");
-            Console.WriteLine("1.Class and Object \n2.Inheritance \n3.Polymorphism");
+            Console.WriteLine("1.Class and Object \n2.Inheritance \n3.Polymorphism \n4.Abstraction");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -39,6 +39,11 @@ namespace OopsConcepts274
                     methodoverriding.Addition(3,4);
                     example example=new example();
                     example.Addition(2,4);
+                    break;
+                case 4:
+                    Rose color = new Rose();
+                    color.Flower();
+                    color.Color();
                     break;
             }                                                            
             Console.ReadLine();                           
