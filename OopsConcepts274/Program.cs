@@ -12,7 +12,7 @@ namespace OopsConcepts274
         static void Main(string[] args)
         {
             Console.WriteLine("Welcoke to oops concepts");
-            Console.WriteLine("1.Class and Object \n2.Inheritance \n3.Polymorphism \n4.Abstraction\n5.Encapsulation\n6.Types of Variables");
+            Console.WriteLine("1.Class and Object \n2.Inheritance \n3.Polymorphism \n4.Abstraction\n5.Encapsulation\n6.Types of Variables\n7.Type of Method");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -59,6 +59,12 @@ namespace OopsConcepts274
                     Console.WriteLine("accesing constant variable Age = "+TypeofVariables.Age);
                     TypeofVariables local=new TypeofVariables();
                     local.Add();
+                    break;
+                case 7:
+                    TypeofMethods typeofMethods = new TypeofMethods(); //creation of object for nonstatic method
+                    typeofMethods.Nonstaticmethod();
+
+                    TypeofMethods.Staticmethod();        //object creation not requireed for static method
                     break;
             }                                                            
             Console.ReadLine();                           
