@@ -11,7 +11,10 @@ namespace OopsConcepts274
         static void Main(string[] args)
         {
             Console.WriteLine("Welcoke to oops concepts");
-            Console.ReadLine();
+            ClassandObject myObject = new ClassandObject();  //This is the object creation 
+            Console.WriteLine(myObject.name);                //we are creating object for ClassandObject Class
+            Console.WriteLine(myObject.age);                //here object name is myObject with help of object                  
+            Console.ReadLine();                           //we are accessing the variables
         }
     }
 }
